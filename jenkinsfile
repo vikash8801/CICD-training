@@ -13,9 +13,9 @@ credentials(name:’myCredentials’, description:’myCredentailsDesc’, requi
     stages {
         stage(‘Example’) {
             steps {
-                echo `We are building for ${params.environment}, ${params.version}, and we are deploying to environment: ${params.to_deploy_to_environment}`
-echo `region:${params.region}, myText: ${params.myText}, myPassword: ${params.myPassword}, and myFile: ${params.myFile}`
-echo `selected credentials is: ${params.myCredentials}`
+                echo "We are building for ${params.environment}, ${params.version}, and we are deploying to environment: ${params.to_deploy_to_environment}"
+echo "region:${params.region}, myText: ${params.myText}, myPassword: ${params.myPassword}, and myFile: ${params.myFile}"
+echo "selected credentials is: ${params.myCredentials}"
             }
         }
     }
